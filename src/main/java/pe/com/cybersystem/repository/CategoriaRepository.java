@@ -1,5 +1,13 @@
 package pe.com.cybersystem.repository;
 
-public interface CategoriaRepository {
+import java.util.List;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 
+import pe.com.cybersystem.entity.CategoriaEntity;
+
+public interface CategoriaRepository extends JpaRepository<CategoriaEntity, Long>{
+	
+	@Query("select cat from CategoriaEntity cat where cat.estado=1") List<CategoriaEntity> findAllCustom();
+	
 }
