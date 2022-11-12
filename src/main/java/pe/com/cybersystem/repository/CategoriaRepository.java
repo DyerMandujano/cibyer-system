@@ -8,6 +8,6 @@ import pe.com.cybersystem.entity.CategoriaEntity;
 
 public interface CategoriaRepository extends JpaRepository<CategoriaEntity, Long>{
 	
-	@Query("select cat from CategoriaEntity cat where cat.estado=1") List<CategoriaEntity> findAllCustom();
+	@Query("select cat from CategoriaEntity cat where cat.estadocat=1") List<CategoriaEntity> findAllCustom();
 	
 }

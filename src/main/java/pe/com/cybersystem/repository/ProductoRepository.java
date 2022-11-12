@@ -8,6 +8,6 @@ import pe.com.cybersystem.entity.ProductoEntity;
 
 public interface ProductoRepository extends JpaRepository<ProductoEntity, Long>{
 
-	@Query("select pro from ProductoEntity pro where pro.estado=1") List<ProductoEntity> findAllCustom();
+	@Query("select pro from ProductoEntity pro where pro.estadoprod=1") List<ProductoEntity> findAllCustom();
 	
 }

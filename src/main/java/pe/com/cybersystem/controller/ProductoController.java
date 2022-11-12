@@ -17,7 +17,7 @@ import pe.com.cybersystem.entity.ProductoEntity;
 import pe.com.cybersystem.service.ProductoService;
 
 @RestController
-@RequestMapping("/categoria")
+@RequestMapping("/producto")
 public class ProductoController {
 
 	@Autowired
