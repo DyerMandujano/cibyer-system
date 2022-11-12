@@ -27,24 +27,24 @@ public class ProductoEntity implements Serializable{
 	public static final long serialVersionUID = 1L; 
 	
 	@Id
-	@Column(name = "IdProducto ")
+	@Column(name = "idproducto ")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long idprod;
-	@Column(name = "NombreProducto")
+	@Column(name = "nombreproducto")
 	private String nombreprod;
-	@Column(name = "Precio")
+	@Column(name = "precio")
 	private double precioprod;
-	@Column(name = "Stock")
+	@Column(name = "stock")
 	private int stockprod;
-	@Column(name = "Descripcion")
+	@Column(name = "descripcion")
 	private String descripcionprod;
-	@Column(name = "Estado")
+	@Column(name = "estado")
 	private boolean estadoprod;
-	@Column(name = "Marca")
+	@Column(name = "marca")
 	private String marcaprod;
 	
 	@ManyToOne
-	@JoinColumn(name = "IdCategoria")
+	@JoinColumn(name = "idcategoria")
 	private CategoriaEntity categoria;
 	
 }

@@ -25,12 +25,12 @@ public class CategoriaEntity implements Serializable{
 	public static final long serialVersionUID = 1L; 
 	
 	@Id
-	@Column(name = "IdCategoria")
+	@Column(name = "idcategoria")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long idcat;
-	@Column(name = "NombreCategoria")
+	@Column(name = "nombrecategoria")
 	private String nombrecat;
-	@Column(name = "Estado")
+	@Column(name = "estado")
 	private boolean estadocat;
 	
 }
