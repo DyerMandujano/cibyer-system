@@ -1,4 +1,4 @@
-package pe.com.cybersystem.controller;
+package pe.com.negocio.controller;
 
 import java.util.List;
 import java.util.Optional;

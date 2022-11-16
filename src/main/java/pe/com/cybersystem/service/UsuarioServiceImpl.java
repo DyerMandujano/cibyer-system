@@ -1,4 +1,4 @@
-package pe.com.cybersystem.service;
+package pe.com.negocio.service;
 
 import java.util.List;
 import java.util.Optional;
