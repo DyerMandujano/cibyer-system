@@ -1,4 +1,4 @@
-package pe.com.negocio.entity;
+package pe.com.cybersystem.entity;
 
 import java.io.Serializable;
 
