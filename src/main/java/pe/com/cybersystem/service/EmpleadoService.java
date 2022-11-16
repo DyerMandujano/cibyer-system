@@ -1,9 +1,10 @@
-package pe.com.negocio.service;
+package pe.com.cybersystem.service;
 
 import java.util.List;
 import java.util.Optional;
 
-import pe.com.negocio.entity.EmpleadoEntity;
+import pe.com.cybersystem.entity.EmpleadoEntity;
+
 
 
 public interface EmpleadoService {

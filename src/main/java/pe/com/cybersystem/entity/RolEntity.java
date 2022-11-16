@@ -1,4 +1,4 @@
-package pe.com.negocio.entity;
+package pe.com.cybersystem.entity;
 
 import java.io.Serializable;
 
@@ -25,12 +25,12 @@ import lombok.NoArgsConstructor;
 public class RolEntity implements Serializable{
 	private static final long serialVersionUID=1L;
 	@Id
-	@Column(name = "IdRol")
+	@Column(name = "idrol")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long codigo;
-	@Column(name = "Rol")
+	@Column(name = "rol")
 	private String rol;
-	@Column(name = "Estado")
+	@Column(name = "estado")
 	private boolean estado;
 	
 	

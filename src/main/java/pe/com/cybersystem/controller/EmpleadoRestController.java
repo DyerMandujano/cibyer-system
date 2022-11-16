@@ -1,4 +1,4 @@
-package pe.com.negocio.controller;
+package pe.com.cybersystem.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -13,10 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import pe.com.negocio.entity.EmpleadoEntity;
-import pe.com.negocio.entity.RolEntity;
-import pe.com.negocio.service.EmpleadoService;
-import pe.com.negocio.service.RolService;
+import pe.com.cybersystem.entity.*;
+import pe.com.cybersystem.service.EmpleadoService;
 
 @RestController
 @RequestMapping("/empleados")

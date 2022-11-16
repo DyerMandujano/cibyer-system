@@ -1,9 +1,10 @@
-package pe.com.negocio.service;
+package pe.com.cybersystem.service;
 
 import java.util.List;
 import java.util.Optional;
 
-import pe.com.negocio.entity.UsuarioEntity;
+import pe.com.cybersystem.entity.UsuarioEntity;
+
 
 public interface UsuarioService {
 	public List<UsuarioEntity> findAll();

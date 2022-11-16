@@ -1,4 +1,4 @@
-package pe.com.negocio.entity;
+package pe.com.cybersystem.entity;
 
 import java.io.Serializable;
 
@@ -23,22 +23,22 @@ import lombok.NoArgsConstructor;
 public class UsuarioEntity implements Serializable {
 	private static final long serialVersionUID=1L;
 	@Id
-	@Column(name = "Idcliente")
+	@Column(name = "idcliente")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long codigo;
-	@Column(name = "Nombre")
+	@Column(name = "nombre")
 	private String nombre;
-	@Column(name = "Apellido")
+	@Column(name = "apellido")
 	private String apellido;
-	@Column(name = "Sexo")
+	@Column(name = "sexo")
 	private String sexo;
-	@Column(name = "Email")
+	@Column(name = "email")
 	private String email;
-	@Column(name = "FechaNacimiento")
+	@Column(name = "fechanacimiento")
 	private String fecha;
-	@Column(name = "Documento")
+	@Column(name = "documento")
 	private String documento;
-	@Column(name = "Estado")
+	@Column(name = "estado")
 	private boolean estado;
 
 }

@@ -1,4 +1,4 @@
-package pe.com.negocio.service;
+package pe.com.cybersystem.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -7,10 +7,9 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import pe.com.negocio.entity.EmpleadoEntity;
-import pe.com.negocio.entity.RolEntity;
-import pe.com.negocio.repository.EmpleadoRepository;
-import pe.com.negocio.repository.RolRepository;
+import pe.com.cybersystem.entity.EmpleadoEntity;
+import pe.com.cybersystem.repository.EmpleadoRepository;
+
 
 @Service
 public class EmpleadoServiceImpl implements EmpleadoService {
