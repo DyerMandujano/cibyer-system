@@ -9,7 +9,7 @@ import pe.com.cybersystem.entity.CompraEntity;
 import pe.com.cybersystem.entity.DetalleCompraEntity;
 
 public interface DetalleCompraRepository extends JpaRepository<DetalleCompraEntity, Long> {
-	@Query("select co from DetalleCompraEntity co where co.iddetallecompra!=0 ")
+	@Query("select co from DetalleCompraEntity co  ")
 	List<CompraEntity> findAllCustom();
 
 }
