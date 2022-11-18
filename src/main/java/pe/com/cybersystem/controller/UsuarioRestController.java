@@ -18,7 +18,7 @@ import pe.com.cybersystem.service.UsuarioService;
 
 
 @RestController
-@RequestMapping("/usuarios")
+@RequestMapping("/cliente")
 public class UsuarioRestController {
 
 	@Autowired

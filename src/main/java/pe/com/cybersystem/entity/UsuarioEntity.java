@@ -19,7 +19,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @Entity(name = "UsuarioEntity")
-@Table(name = "usuario")
+@Table(name = "cliente")
 public class UsuarioEntity implements Serializable {
 	private static final long serialVersionUID=1L;
 	@Id
