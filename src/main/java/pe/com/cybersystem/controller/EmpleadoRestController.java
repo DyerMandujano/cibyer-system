@@ -31,7 +31,7 @@ public class EmpleadoRestController {
 	
 	@GetMapping("/custom")
 	public List<EmpleadoEntity>findAllCustom(){
-		return servicio.findAll();
+		return servicio.findAllCustom();
 	}
 	
 
@@ -46,12 +46,12 @@ public class EmpleadoRestController {
 	}
 	
 	@PutMapping("/{id}")
-	public EmpleadoEntity update(@PathVariable long id, EmpleadoEntity r ) {
+	public EmpleadoEntity update(@PathVariable long id, @RequestBody EmpleadoEntity r ) {
 		r.setCodigo(id);
 		return servicio.update(r);
 	}
 	
-	@DeleteMapping("/id")
+	@DeleteMapping("/{id}")
 	public EmpleadoEntity delete (@PathVariable long id) {
 		EmpleadoEntity objeempleado=new EmpleadoEntity();
 		objeempleado.setEstado(false);

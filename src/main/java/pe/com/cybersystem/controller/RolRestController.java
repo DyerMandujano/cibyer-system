@@ -31,7 +31,7 @@ public class RolRestController {
 	
 	@GetMapping("/custom")
 	public List<RolEntity>findAllCustom(){
-		return servicio.findAll();
+		return servicio.findAllCustom();
 	}
 	
 
@@ -46,12 +46,12 @@ public class RolRestController {
 	}
 	
 	@PutMapping("/{id}")
-	public RolEntity update(@PathVariable long id, RolEntity r ) {
+	public RolEntity update(@PathVariable long id, @RequestBody RolEntity r ) {
 		r.setCodigo(id);
 		return servicio.update(r);
 	}
 	
-	@DeleteMapping("/id")
+	@DeleteMapping("/{id}")
 	public RolEntity delete (@PathVariable long id) {
 		RolEntity objRolEntity=new RolEntity();
 		objRolEntity.setEstado(false);

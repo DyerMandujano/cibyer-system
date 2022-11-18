@@ -32,7 +32,7 @@ public class UsuarioRestController {
 	
 	@GetMapping("/custom")
 	public List<UsuarioEntity>findAllCustom(){
-		return servicio.findAll();
+		return servicio.findAllCustom();
 	}
 	
 
@@ -47,12 +47,12 @@ public class UsuarioRestController {
 	}
 	
 	@PutMapping("/{id}")
-	public UsuarioEntity update(@PathVariable long id, UsuarioEntity r ) {
+	public UsuarioEntity update(@PathVariable long id, @RequestBody UsuarioEntity r ) {
 		r.setCodigo(id);
 		return servicio.update(r);
 	}
 	
-	@DeleteMapping("/id")
+	@DeleteMapping("/{id}")
 	public UsuarioEntity delete (@PathVariable long id) {
 		UsuarioEntity objusuario=new UsuarioEntity();
 		objusuario.setEstado(false);

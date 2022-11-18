@@ -37,8 +37,9 @@ public class DetalleCompraController {
 		return servicio.add(d);
 	}
 	
+	
 	@PutMapping("/{id}")
-	public DetalleCompraEntity update(@PathVariable long id, DetalleCompraEntity d) {
+	public DetalleCompraEntity update(@PathVariable long id, @RequestBody DetalleCompraEntity d) {
 		d.setIddetallecompra(id);
 		return servicio.update(d);
 	}
