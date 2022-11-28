@@ -13,45 +13,72 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import pe.com.cybersystem.entity.VentaEntity;
-import pe.com.cybersystem.service.VentaService;
+import pe.com.cybersystem.entity.ReclamoEntity;
+import pe.com.cybersystem.service.ReclamoService;
 
 @RestController
-@RequestMapping("/ventas")
-public class VentaController {
+@RequestMapping("/reclamo")
+public class ReclamoController {
+
 	@Autowired
-	private VentaService servicio;
+	private ReclamoService servicio;
 	
 	@GetMapping
-	public List<VentaEntity>findAll(){
+	public List<ReclamoEntity> findAll(){
 		return servicio.findAll();
 	}
 	
 	@GetMapping("/custom")
-	public List<VentaEntity> findAllCustom(){
+	public List<ReclamoEntity> findAllCustom(){
 		return servicio.findAllCustom();
 	}
 	
 	@GetMapping("/{id}")
-	public Optional<VentaEntity> findById(@PathVariable Long id){
+	public Optional<ReclamoEntity> findById(@PathVariable long id){
 		return servicio.findById(id);
 	}
 	
 	@PostMapping
-	public VentaEntity add(@RequestBody VentaEntity v) {
-		return servicio.add(v);
+	public ReclamoEntity add(@RequestBody ReclamoEntity r) {
+		return servicio.add(r);
 	}
 	
 	@PutMapping("/{id}")
-	public VentaEntity update(@PathVariable Long id, @RequestBody VentaEntity v) {
-		v.setIdpedido(id);
-		return servicio.update(v);
+	public ReclamoEntity update(@PathVariable Long id, @RequestBody ReclamoEntity r) {
+		r.setIdreclamo(id);
+		return servicio.update(r);
 	}
 	
 	@DeleteMapping("/{id}")
-	public VentaEntity delete(@PathVariable Long id) {
-		VentaEntity obj = new VentaEntity();
-		obj.setEstado(false);
-		return servicio.delete(VentaEntity.builder().idpedido(id).build());
+	public ReclamoEntity delete(@PathVariable long id) {
+		ReclamoEntity objreclamo = new ReclamoEntity();
+		objreclamo.setEstado(false);
+		return servicio.delete(ReclamoEntity.builder().idreclamo(id).build());
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
